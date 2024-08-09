@@ -1,0 +1,125 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(135deg,#8052ec,#d161ff);
+}
+.container{
+    border: 2px solid #fff;
+    width: 40%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    min-width: 450px;
+    padding: 30px 40px;
+}
+#newtask{
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+#newtask input{
+    width: 70%;
+    height: 44px;
+    font-size: 15px;
+    padding: 12px;
+    border: 2px solid #d1d3d4;
+    font-weight: 500;
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    border-radius: 5px;
+}
+#newtask input:focus{
+    outline: none;
+    border-color: #8052ec;
+}
+#newtask button{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 44px;
+    font-family: 'Poppins',sans-serif;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #8052ec;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s all ease;
+}
+#newtask button:hover{
+    color: #8052ec;
+    background-color: #ffffff;
+    border: 1px solid #8052ec;
+    transform: scale(95%);
+    transition: 0.5s all ease;
+}
+#tasks{
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: relative;
+}
+.task{
+    background-color: #ffffff;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+}
+.task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.task button{
+    background-color: #8052ec;
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s all ease;
+}
+.task button:hover{
+    color: #8052ec;
+    background-color: #ffffff;
+    border: 1px solid #8052ec;
+    transform: scale(95%);
+    transition: 0.5s all ease;
+}
+.completed{
+    text-decoration: line-through;
+}
+
+@media (max-width:499px){
+    .container {
+        min-width: 350px;
+        padding: 20px 30px;
+    }
+    #newtask {
+        padding: 20px 10px;
+    }
+    #tasks {
+        padding: 20px 10px;
+        margin-top: 50px;
+    }
+    
+}
